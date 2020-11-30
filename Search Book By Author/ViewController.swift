@@ -24,7 +24,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBAction func searchBooksButton(_ sender: Any) {
         author = authorField.text ?? ""
-        bookUrl = "https://www.googleapis.com/books/v1/volumes?q=inauthor:\(author)&key=AIzaSyDyYMNzzqDSFV9nvlx8ilguM9ParqnxKc4"
+        bookUrl = "https://www.googleapis.com/books/v1/volumes?q=inauthor:\(author)&key=API_KEY"
         getBooks()
     }
     func getBooks() {
